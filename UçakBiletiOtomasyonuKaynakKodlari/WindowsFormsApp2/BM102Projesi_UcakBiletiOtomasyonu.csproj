@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A853A8F3-65D7-49D8-BBDE-1436FFE7B2D8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp2</RootNamespace>
+    <AssemblyName>WindowsFormsApp2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BiletGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BiletGuncelle.Designer.cs">
+      <DependentUpon>BiletGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BiletIptal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BiletIptal.Designer.cs">
+      <DependentUpon>BiletIptal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Biletsatis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Biletsatis.Designer.cs">
+      <DependentUpon>Biletsatis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckIn.Designer.cs">
+      <DependentUpon>CheckIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckIn2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckIn2.Designer.cs">
+      <DependentUpon>CheckIn2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GirisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GirisEkrani.Designer.cs">
+      <DependentUpon>GirisEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelKaydi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelKaydi.Designer.cs">
+      <DependentUpon>PersonelKaydi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnaMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaMenu.Designer.cs">
+      <DependentUpon>AnaMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AcilisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcilisEkrani.Designer.cs">
+      <DependentUpon>AcilisEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OdemeEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OdemeEkrani.Designer.cs">
+      <DependentUpon>OdemeEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Raporlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Raporlar.Designer.cs">
+      <DependentUpon>Raporlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeferEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeferEkle.Designer.cs">
+      <DependentUpon>SeferEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seferler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seferler.Designer.cs">
+      <DependentUpon>Seferler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UcakBiletiSatisOtomasyonuVeritabaniDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UcakBiletiSatisOtomasyonuVeritabaniDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UcakBiletiSatisOtomasyonuVeritabaniDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UcakBiletiSatisOtomasyonuVeritabaniDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UcakBiletiSatisOtomasyonuVeritabaniDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UcakBiletiSatisOtomasyonuVeritabaniDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UcakBiletiSatisOtomasyonuVeritabaniDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UcakBiletiSatisOtomasyonuVeritabaniDataSet3.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BiletGuncelle.resx">
+      <DependentUpon>BiletGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BiletIptal.resx">
+      <DependentUpon>BiletIptal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Biletsatis.resx">
+      <DependentUpon>Biletsatis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckIn.resx">
+      <DependentUpon>CheckIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckIn2.resx">
+      <DependentUpon>CheckIn2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GirisEkrani.resx">
+      <DependentUpon>GirisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelKaydi.resx">
+      <DependentUpon>PersonelKaydi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnaMenu.resx">
+      <DependentUpon>AnaMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AcilisEkrani.resx">
+      <DependentUpon>AcilisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OdemeEkrani.resx">
+      <DependentUpon>OdemeEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Raporlar.resx">
+      <DependentUpon>Raporlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeferEkle.resx">
+      <DependentUpon>SeferEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seferler.resx">
+      <DependentUpon>Seferler.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="UcakBiletiSatisOtomasyonuVeritabaniDataSet.xsc">
+      <DependentUpon>UcakBiletiSatisOtomasyonuVeritabaniDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UcakBiletiSatisOtomasyonuVeritabaniDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UcakBiletiSatisOtomasyonuVeritabaniDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UcakBiletiSatisOtomasyonuVeritabaniDataSet.xss">
+      <DependentUpon>UcakBiletiSatisOtomasyonuVeritabaniDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UcakBiletiSatisOtomasyonuVeritabaniDataSet1.xsc">
+      <DependentUpon>UcakBiletiSatisOtomasyonuVeritabaniDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="UcakBiletiSatisOtomasyonuVeritabaniDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UcakBiletiSatisOtomasyonuVeritabaniDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UcakBiletiSatisOtomasyonuVeritabaniDataSet1.xss">
+      <DependentUpon>UcakBiletiSatisOtomasyonuVeritabaniDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="UcakBiletiSatisOtomasyonuVeritabaniDataSet2.xsc">
+      <DependentUpon>UcakBiletiSatisOtomasyonuVeritabaniDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="UcakBiletiSatisOtomasyonuVeritabaniDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UcakBiletiSatisOtomasyonuVeritabaniDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UcakBiletiSatisOtomasyonuVeritabaniDataSet2.xss">
+      <DependentUpon>UcakBiletiSatisOtomasyonuVeritabaniDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="UcakBiletiSatisOtomasyonuVeritabaniDataSet3.xsc">
+      <DependentUpon>UcakBiletiSatisOtomasyonuVeritabaniDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="UcakBiletiSatisOtomasyonuVeritabaniDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UcakBiletiSatisOtomasyonuVeritabaniDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UcakBiletiSatisOtomasyonuVeritabaniDataSet3.xss">
+      <DependentUpon>UcakBiletiSatisOtomasyonuVeritabaniDataSet3.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\41e6100f6d397633827752a4a870a2a3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kamera-Işık-Fotoğraf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\41e6100f6d397633827752a4a870a2a31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\updatejpg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kamera-Işık-Fotoğraf1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kamera-Işık-Fotoğraf2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran görüntüsü 2021-05-09 180038.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plane_PNG101214.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plane_PNG1012141.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\updatejpg2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel-icon-pngrepo-com.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\93899.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hd-svg-icon-free-download-flights-icon-png-transparent-png-image-flights-png-980_850.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-icon-png-0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\108-1087676_close-remove-delete-exit-cross-cancel-trash-comments-close-button-icon-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2304139541541068762-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\approve-and-update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\90417.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3016308411586787347-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cartooncloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\548_fly_airplane_plane_airport_valentine_valentines_day_love-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-blue-sky-illustration-sky-blue-cloud-desktop-sky-blue-atmosphere.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-blue-sky-illustration-sky-blue-cloud-desktop-sky-blue-atmosphere1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1000px-Mastercard-logo.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0_umwk59hLeX08E3b0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bulut_723909.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tenor.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d6d1e0bbdd2eda8f44a2125154670e82.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1Unb.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cca5022c86f67861746d7cf2eb486de8.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a7ea95155c94f7ec87fd1a11c1c93ea8.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\only-plane.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G2Nf.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bilet.bmp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixlr-bg-result.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixlr-bg-result1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plane-animated-gif-3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plane-animated-gif-31.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CompetentSmoggyIndianpangolin-small.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0d75dc22c9bead511907ffdefc1fdb9c.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Airplane.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sun-gif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c7ba95_e28fea0b8ff74f53961f9ead53aac864_mv2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BiletGoruntusu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BiletGoruntusu-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixlr-bg-result %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixlr-bg-result %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixlr-bg-result %281%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BiletGoruntusu-removebg-preview %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BiletGoruntusu1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
